@@ -2,13 +2,13 @@
 
 > A Vue.js project
 
-###socket.io + vue.js 实现简易的聊天室
+### socket.io + vue.js 实现简易的聊天室
 	
 ## 分别在project和project-other目录下,在命令窗口运行npm install 和 npm run dev
 ![>home.vue](README_files/2.jpg)
 ![>chat.vue](README_files/3.jpg)
 
-###技术栈：
+### 技术栈：
 1.  sass:css预处理器，利于后期的维护.
 	如:如果要更改整体的主题颜色，只需要改变src/style/attributes.scss下的$themeColor就行了
 2.	vuex:通过vuex来实现各组件之间数据的传递
@@ -20,6 +20,10 @@
 	localStorage 的数据是存储在浏览器维护的一个简单数据库里面，在本地文件中存储，所以可以“持久化”存在。
 4.	express模块
 5.	socket.io:[https://socket.io/] Socket.io是一个WebSocket库。通过其提供的接口，可以实现实时通信
+
+> 其他：
+1. 使用postcss-plugin-px2rem插件把px转成rem
+2. 使用@media screen实现网页响应式布局
 	
 	
 	
@@ -105,9 +109,6 @@ io.sockets.on('connection', socket => {	//io就是io.sockets到简写
 	},
 ```
 	
-
-
-
 
 
 ## Build Setup

@@ -130,6 +130,8 @@
 	.wrapper {
 		@extend .box;
 		animation-duration: .1s;
+		display: flex;
+		flex-direction: column;
 	}
 
 	.chat_header {
@@ -144,9 +146,10 @@
 	}
 
 	.content {
-		height: 558px;
+		// height: 558px;
+		flex: 1;
 		overflow: auto;
-
+		
 		&::-webkit-scrollbar {
 			/* 既有滚动特性，又去掉滚动条，只兼容Chrome 和 Safari */
 			display: none;
@@ -154,16 +157,17 @@
 	}
 
 	.chat_fotter {
+		display: flex;
 		width: 100%;
 		height: 45px;
-		padding: 8px 15px;
+		padding: 8px 10px;
 		box-sizing: border-box;
 		box-shadow: 0 0 10px #ddd;
 		text-align: left;
 	}
 
 	input {
-		width: 90%;
+		flex: 1;
 		height: 29px;
 		border: none;
 		outline: none;
@@ -173,10 +177,9 @@
 	}
 
 	.send {
-		width: 8%;
+		width: 13%;
 		height: 25px;
-		margin: 0 3px;
-		// background-color: #129611;
+		margin: 0 0 0 5px;
 		background-color: $themeColor;
 		border: none;
 		outline: none;
@@ -184,7 +187,6 @@
 	}
 
 	.Back {
-		// font-size: 1.6rem;
 		color: $bg;
 		cursor: pointer;
 	}

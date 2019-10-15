@@ -20,6 +20,10 @@
 	localStorage 的数据是存储在浏览器维护的一个简单数据库里面，在本地文件中存储，所以可以“持久化”存在。
 4.	express模块
 5.	socket.io:[https://socket.io/] Socket.io是一个WebSocket库。通过其提供的接口，可以实现实时通信
+
+> 其他：
+1. 使用postcss-plugin-px2rem插件把px转成rem
+2. 使用@media screen实现网页布局响应式
 	
 	
 	

@@ -47,14 +47,18 @@
 		width: 200px;
 		height: 180px;
 		background-image: url(../assets/chatlogo.png);
+		background-repeat: no-repeat;
 		margin: 100px auto 0;
 	}
 
 	.input_name {
+		position: relative;
 		margin-top: 50px;
 		font-size: 1.6rem;
 		font-weight: 800;
-
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		&>input {
 			font-size: 1.6rem;
 			font-weight: 800;
@@ -64,6 +68,7 @@
 
 	#name {
 		width: 400px;
+		width: 65%;
 		padding: 10px 0;
 		outline: none;
 		border: none;
@@ -72,10 +77,9 @@
 	}
 
 	.log_in {
-		position: absolute;
-		bottom: 200px;
-		left: 100px;
-		width: 400px;
+		margin-top: 20px;
+		// width: 400px;
+		width: 65%;
 		height: 50px;
 		line-height: 50px;
 		color: $bg;
@@ -85,9 +89,12 @@
 	}
 
 	.warning_text {
+		position:absolute ;
+		top: 45px;
 		color: $red;
 		font-weight: 400;
 		font-size: 1.3rem;
+		// width: 65%;
 		width: 400px;
 		margin: 0 auto;
 		text-align: left;
