@@ -5,8 +5,8 @@
 ### socket.io + vue.js 实现简易的聊天室
 	
 ## 分别在project和project-other目录下,在命令窗口运行npm install 和 npm run dev
-![>home.vue](README_files/2.jpg)
-![>chat.vue](README_files/3.jpg)
+![>home.vue](./project/README_files/2.jpg)
+![>chat.vue](./project/README_files/3.jpg)
 
 ### 技术栈：
 1.  sass:css预处理器，利于后期的维护.
